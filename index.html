@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced AI Image Classifier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.14.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🔍 Advanced AI Image Classifier</h1>
+
+    <div class="input-block">
+      <input type="file" id="imageInput" accept="image/*">
+      <button onclick="classifyImage()">Classify</button>
+    </div>
+
+    <div class="image-preview">
+      <img id="preview" src="assets/fallback.jpg" alt="Upload to Preview">
+    </div>
+
+    <div id="status">Status: <span id="statusText">Loading model...</span></div>
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
